@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Concert+One&family=Oswald:wght@200..700&family=Spicy+Rice&display=swap');
+
 .img{
-  border-radius: 30px;
+  border-radius: 40px;
   display: block;
   margin: auto;
-  border:2px solid purple;
+  padding: 1%;
 }

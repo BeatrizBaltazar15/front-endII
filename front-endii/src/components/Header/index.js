@@ -1,21 +1,48 @@
+'use client';
+
 import Link from "next/link"
-import styles from "./header.module.css"
-export default function Header(){
+import React, { useState } from 'react';
+import styles from "./Header.module.css";
+import Image from "next/image";
+
+const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <header>
-            <div>
-            <nav>
-                <ul className={styles.lista}>
-                    <li>
-                        <Link href='/'>Home</Link>
-                    </li>
-                    <li>
-                    <Link href='/sobre'>Sobre</Link>
-                    </li>
-                </ul>
-            </nav>
-            <h2></h2>
+        <header className={styles.header}>
+
+            <div className={styles.logo}>
+                <Image className={styles.img} src='/images/logo.avif' alt=" logo " width={50} height={150} />
+                
             </div>
+
+            {isMenuOpen &&
+                <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
+                    <ul className={styles.lista}>
+                        <li>
+                            <Link className={styles.link} href='/'>Animais</Link>
+                        </li>
+
+                        <li>
+                            <Link className={styles.link} href="/sobre">Dogs</Link>
+                        </li>
+
+                        <li>
+                            <Link className={styles.link} href="/state">Cats</Link>
+                        </li>
+                    </ul>
+                </nav>
+            }
+            <button className={styles.menuButton} onClick={toggleMenu}>
+                {isMenuOpen ? 'Sair' : 'Abrir Menu'}
+            </button>
         </header>
-    )
-}
+    );
+};
+
+export default Header;

@@ -1,10 +1,15 @@
-const Sobre  = () => {
+import styles from "./sobre.module.css";
+import Image from "next/image";
+export default function Sobre() {
     return (
         <main>
-        <h1>Página Sobre</h1>
-        <p>OI! Bem Vindo </p>
-        </main>
-    )
-}
+            <h1> Cachorros </h1>
+            <p> 
+            </p>
 
-export default Sobre;
+
+            <Image className={styles.img_sobre} src='/images/cachorro.jpg' alt="gfg" width={450} height={500} />
+        </main>
+         
+);
+}
