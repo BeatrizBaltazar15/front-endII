@@ -17,7 +17,7 @@ const Header = () => {
         <header className={styles.header}>
 
             <div className={styles.logo}>
-                <Image className={styles.img} src='/images/logo.avif' alt=" logo " width={50} height={150} />
+                <Image className={styles.img} src='/images/logo2.webp' alt=" logo " width={55} height={200} />
                 
             </div>
 
@@ -29,18 +29,19 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link className={styles.link} href="/sobre">Dogs</Link>
+                            <Link className={styles.link} href="/sobre">Selvagens</Link>
                         </li>
 
                         <li>
-                            <Link className={styles.link} href="/state">Cats</Link>
+                            <Link className={styles.link} href="/state">Domésticos</Link>
                         </li>
                     </ul>
                 </nav>
             }
             <button className={styles.menuButton} onClick={toggleMenu}>
-                {isMenuOpen ? 'Sair' : 'Abrir Menu'}
+                {isMenuOpen ? <Image className={styles.img} src='/images/X.webp' alt=" logo " width={55} height={200} /> : <Image className={styles.img} src='/images/open3.png' alt=" logo " width={55} height={200} />}
             </button>
+        
         </header>
     );
 };

@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function Sobre() {
     return (
         <main>
-            <h1> Cachorros </h1>
+            <h1> Selvagens </h1>
             <p> 
             </p>
 
 
-            <Image className={styles.img_sobre} src='/images/cachorro.jpg' alt="gfg" width={450} height={500} />
+            <Image className={styles.img_sobre} src='/images/onca.webp' alt="gfg" width={450} height={500} />
         </main>
          
 );
