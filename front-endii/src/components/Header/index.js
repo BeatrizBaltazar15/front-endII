@@ -35,6 +35,9 @@ const Header = () => {
                         <li>
                             <Link className={styles.link} href="/state">Domésticos</Link>
                         </li>
+                        <li>
+                            <Link className={styles.link} href="/listas">Raças</Link>
+                        </li>
                     </ul>
                 </nav>
             }
