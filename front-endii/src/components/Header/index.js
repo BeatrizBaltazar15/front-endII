@@ -38,6 +38,9 @@ const Header = () => {
                         <li>
                             <Link className={styles.link} href="/listas">Raças</Link>
                         </li>
+                        <li>
+                            <Link className={styles.link} href="/props">Props</Link>
+                        </li>
                     </ul>
                 </nav>
             }

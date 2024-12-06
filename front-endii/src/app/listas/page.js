@@ -1,3 +1,4 @@
+import Card from '@/components/Card'
 export default function Listas () {
 const nomes = ['Rottweiler', 'Shih Tzu', 'Pastor Belga', 'Basenji','Yorkshire']
 const gatos = [
@@ -37,7 +38,7 @@ const gatos = [
 ]
     return(
         <div>
-            <h1>Raças de cachorros</h1>
+            <h1>Raças de cachorros  e gatos</h1>
             <h2>Lista Comum</h2>
             <ul style={{marginLeft:'50px'}}>
                 {nomes.map((nome, id) => (
