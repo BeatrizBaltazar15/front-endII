@@ -39,7 +39,7 @@ const gatos = [
 ]
     return (
         <div>
-            <h1>Props</h1>
+            <h1>Gatos e seu tempo de vida!</h1>
             {
                 gatos.map((gato) => (
                     <Card 
