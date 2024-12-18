@@ -44,6 +44,9 @@ const Header = () => {
                         <li>
                             <Link className={styles.link} href="/filtro">filtro</Link>
                         </li>
+                        <li>
+                            <Link className={styles.link} href="/efeitos">Efeitos</Link>
+                        </li>
                     </ul>
                 </nav>
             }
