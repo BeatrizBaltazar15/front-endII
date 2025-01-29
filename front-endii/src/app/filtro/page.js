@@ -5,7 +5,7 @@ export default function Filtro() {
 
     const nums = [1,2,3,4,5,6,7,8,9,10];
     const pares =  nums.filter((num) => (num % 2 === 0));
-    const nomes = ["Wagner", "Bia", "Yasmin", "Ana"]
+    const nomes = ["Wagner", "Beatriz", "Yasmin", "Ana", "Gabriela", "Pedro","Vitor"]
     const [busca, setBusca] = useState('')
     const nomesBusca = nomes.filter((nome) => (nome.toLowerCase().includes(busca.toLowerCase())));
     console.log(pares);

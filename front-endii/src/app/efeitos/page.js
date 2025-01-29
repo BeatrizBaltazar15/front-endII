@@ -10,7 +10,7 @@ export default function Efeitos() {
 
     const getUfs = async () => {
         
-        const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
+        const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/?orderBy=nome')
         if (!response.ok) {
             throw new Error('Erro ao buscar os dados: ' + response.statusText)
         }
@@ -23,7 +23,7 @@ export default function Efeitos() {
     const getcidades = async () => {
         console.log('getCidades')
         console.log(estado)
-        const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estado}/municipios`)
+        const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estado}/municipios/?orderBy=nome`)
         if (!response.ok) {
             throw new Error('Erro ao buscar os dados: ' + response.statusText)
         }
@@ -48,9 +48,9 @@ export default function Efeitos() {
         <div>
             <h1>UseEffect/ Efeitos Colaterais </h1>
             <select
-                onChange={(ev) => {setEstado(ev.target.value), setCidade('')}}
+                onChange={(ev) => {setEstado(ev.target.value), setCidade('') }}
             >
-                <option value="">Selecione o Estado</option>
+                <option value="">Selecione o Estado🌆</option>
                 {ufs.map(uf => (
                     <option
                         value={uf.id}
@@ -64,7 +64,7 @@ export default function Efeitos() {
             <select
                 onChange={(ev) => {setCidade(ev.target.value)}}
             >
-                <option value="">Selecione a Cidade</option>
+                <option value="">Selecione a Cidade🌆</option>
                 {cidades.map((cidade) => (
                     <option
                         value={cidade.nome}
