@@ -17,7 +17,7 @@ const Header = () => {
         <header className={styles.header}>
 
             <div className={styles.logo}>
-                <Image className={styles.img} src='/images/logo2.webp' alt=" logo " width={55} height={200} />
+                <Image className={styles.img} src='/images/pg.png' alt=" logo " width={55} height={200} />
                 
             </div>
 
@@ -25,20 +25,20 @@ const Header = () => {
                 <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
                     <ul className={styles.lista}>
                         <li>
-                            <Link className={styles.link} href='/'>Animais</Link>
+                            <Link className={styles.link} href='/'>Home</Link>
                         </li>
 
                         <li>
-                            <Link className={styles.link} href="/sobre">Selvagens</Link>
+                            <Link className={styles.link} href="/medico">Médico</Link>
                         </li>
 
                         <li>
-                            <Link className={styles.link} href="/state">Domésticos</Link>
+                            <Link className={styles.link} href="/paciente">Paciente</Link>
                         </li>
                         <li>
-                            <Link className={styles.link} href="/listas">Raças</Link>
+                            <Link className={styles.link} href="/consulta">Consulta</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link className={styles.link} href="/props">Dúvidas</Link>
                         </li>
                         <li>
@@ -46,7 +46,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link className={styles.link} href="/efeitos">Efeitos</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
             }
