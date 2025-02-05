@@ -30,7 +30,25 @@ const Header = () => {
 
                         <li>
                             <Link className={styles.link} href="/medico">Médico</Link>
+                            <ul className={styles.submenu}>
+                            <li className={styles.sub}>
+                                <a href="/medico"> Listar</a>
+                            </li>
+
+                            <li className={styles.sub}>
+                                <a href="/medico"> Adicionar</a>
+                            </li>
+
+                            <li className={styles.sub}>
+                                <a href="/medico"> Editar</a>
+                            </li>
+
+                            <li className={styles.sub}>
+                                <a  href="/medico"> Excluir</a>
+                            </li>
+                         </ul>
                         </li>
+                     
 
                         <li>
                             <Link className={styles.link} href="/paciente">Paciente</Link>

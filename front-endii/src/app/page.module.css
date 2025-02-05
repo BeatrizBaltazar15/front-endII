@@ -6,3 +6,16 @@
   margin: auto;
   padding: 1%;
 }
+
+.home {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(189, 223, 236);
+}
+.text{
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}

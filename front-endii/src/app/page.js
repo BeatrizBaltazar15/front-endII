@@ -7,10 +7,11 @@ export default function Home() {
    
     
 
-      <div>
-        <h1 className={styles.h1}>Homeeee</h1>
-        <p></p>
-        <Image className={styles.img} src='/images/' alt=" " width={625} height={500} />
+      <div className= {styles.home}>
+        
+        <h1 className={styles.h1}>Bem vindos 💕</h1>
+        <p className={styles.text}>Nossa equipe de profissionais altamente qualificados está pronta para cuidar da sua saúde com dedicação e excelência. Oferecemos um atendimento humanizado, tecnologia de ponta e uma ampla gama de especialidades médicas para garantir seu bem-estar.</p>
+         {/*<Image className={styles.img} src='/images/' alt=" " width={625} height={500} />*/}
       
       </div>
 
