@@ -18,7 +18,7 @@ const Header = () => {
 
             <div className={styles.logo}>
                 <Image className={styles.img} src='/images/pg.png' alt=" logo " width={55} height={200} />
-                
+
             </div>
 
             {isMenuOpen &&
@@ -28,30 +28,47 @@ const Header = () => {
                             <Link className={styles.link} href='/'>Home</Link>
                         </li>
 
-                        <li>
+                        <li className={styles.itemMenu}>
                             <Link className={styles.link} href="/medico">Médico</Link>
                             <ul className={styles.submenu}>
-                            <li className={styles.sub}>
-                                <a href="/medico"> Listar</a>
-                            </li>
+                                <li className={styles.sub}>
+                                    <a href="/medico"> Listar</a>
+                                </li>
 
-                            <li className={styles.sub}>
-                                <a href="/medico"> Adicionar</a>
-                            </li>
+                                <li className={styles.sub}>
+                                    <a href="/medico"> Adicionar</a>
+                                </li>
 
-                            <li className={styles.sub}>
-                                <a href="/medico"> Editar</a>
-                            </li>
+                                <li className={styles.sub}>
+                                    <a href="/medico"> Editar</a>
+                                </li>
 
-                            <li className={styles.sub}>
-                                <a  href="/medico"> Excluir</a>
-                            </li>
-                         </ul>
+                                <li className={styles.sub}>
+                                    <a href="/medico"> Excluir</a>
+                                </li>
+                            </ul>
                         </li>
-                     
 
-                        <li>
+
+                        <li className={styles.itemMenu}>
                             <Link className={styles.link} href="/paciente">Paciente</Link>
+                            <ul className={styles.submenu}>
+                                <li className={styles.sub}>
+                                    <a href="/paciente"> Listar</a>
+                                </li>
+
+                                <li className={styles.sub}>
+                                    <a href="/paciente"> Adicionar</a>
+                                </li>
+
+                                <li className={styles.sub}>
+                                    <a href="/paciente"> Editar</a>
+                                </li>
+
+                                <li className={styles.sub}>
+                                    <a href="/paciente"> Excluir</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <Link className={styles.link} href="/consulta">Consulta</Link>
@@ -71,9 +88,10 @@ const Header = () => {
             <button className={styles.menuButton} onClick={toggleMenu}>
                 {isMenuOpen ? <Image className={styles.img} src='/images/X.webp' alt=" logo " width={55} height={200} /> : <Image className={styles.img} src='/images/open3.png' alt=" logo " width={55} height={200} />}
             </button>
-        
+
         </header>
     );
 };
+
 
 export default Header;
