@@ -37,6 +37,7 @@ export default function Sobre() {
                         <td className={styles.td}>{medico.id}</td>
                         <td className={styles.td}>{medico.nome}</td>
                         <td className={styles.td}>{medico.telefone}</td>
+                        <td className={styles.td}>{medico.email}</td>
                         <td className={styles.td}>{medico.especialidade}</td>
                     </tr>
 
