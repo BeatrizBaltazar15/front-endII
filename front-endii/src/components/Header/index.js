@@ -70,9 +70,29 @@ const Header = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li>
+
+                        <li className={styles.itemMenu}>
                             <Link className={styles.link} href="/consulta">Consulta</Link>
+                            <ul className={styles.submenu}>
+                                <li className={styles.sub}>
+                                    <a href="/consulta"> Listar consultas</a>
+                                </li>
+
+                                <li className={styles.sub}>
+                                    <a href="/consulta"> Agendar consultas</a>
+                                </li>
+
+                                <li className={styles.sub}>
+                                    <a href="/consulta">Editar agendamentos </a>
+                                </li>
+
+                                <li className={styles.sub}>
+                                    <a href="/consulta">Cancelar</a>
+                                </li>
+                            </ul>
                         </li>
+                  
+
                         {/* <li>
                             <Link className={styles.link} href="/props">Dúvidas</Link>
                         </li>
